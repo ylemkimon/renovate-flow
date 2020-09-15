@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "config:base",
+    "group:linters"
+  ],
+  "regexManagers": [{
+    "fileMatch": ["^\\.flowconfig$"],
+    "matchStrings": ["\\[version\\]\\s*(?<currentValue>.*?)\\s"],
+    "depNameTemplate": "flow-bin",
+    "datasourceTemplate": "npm"
+  }, {
+    "fileMatch": ["^\\.yarn/sdks/[^/]+/package\\.json$"],
+    "matchStrings": ["\"name\": \"(?<depName>.*?)\",\\s*\"version\": \"(?<currentValue>.*?)-pnpify\""],
+    "datasourceTemplate": "npm"
+  }],
+  "rangeStrategy": "update-lockfile",
+  "postUpdateOptions": ["yarnDedupeHighest"]
+}
