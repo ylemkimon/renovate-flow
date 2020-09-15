@@ -1,0 +1,7 @@
+{
+  "name": "renovate-flow",
+  "main": "index.js",
+  "devDependencies": {
+    "flow-bin": "^0.131.0"
+  }
+}
