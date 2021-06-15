@@ -5,12 +5,12 @@ __metadata:
   version: 4
   cacheKey: 6
 
-"flow-bin@npm:^0.131.0":
-  version: 0.131.0
-  resolution: "flow-bin@npm:0.131.0"
+"flow-bin@npm:^0.153.0":
+  version: 0.153.0
+  resolution: "flow-bin@npm:0.153.0"
   bin:
     flow: cli.js
-  checksum: 7d0d157a6a6372772c08d8d7425d8dd8b115ad25abf0cbc2b72b2ea6b4edb3c727b32141d1d3e310697cc3ce2a5390ee08269bf9d63c3d8ed1f8d761f4cc09af
+  checksum: b0adad3f9b3f07fc607793476d96ac9e136ca036fe241c8db7072537c632bb807def609bcbd6e1da9c0587e074e20bbcb277d2f299e1b5a682316cbd32b4581b
   languageName: node
   linkType: hard
 
@@ -18,6 +18,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "renovate-flow@workspace:."
   dependencies:
-    flow-bin: ^0.131.0
+    flow-bin: ^0.153.0
   languageName: unknown
   linkType: soft
